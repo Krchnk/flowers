@@ -2,70 +2,169 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Flower Shop</title>
+  <title>Flower & Berry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff5f8;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fff0f5, #fefefe);
+      color: #222;
+    }
+
+    header {
+      padding: 80px 20px;
       text-align: center;
     }
-    header {
-      background: #ff7aa2;
-      color: white;
-      padding: 50px 20px;
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
-    .products {
-      padding: 40px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    header p {
+      font-size: 18px;
+      color: #555;
     }
-    .card {
-      background: white;
-      width: 280px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .btn {
+
+    .btn-main {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #ff7aa2;
+      margin-top: 25px;
+      padding: 14px 32px;
+      background: #ff4d6d;
       color: white;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255,77,109,0.3);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .price {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .btn-order {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🌸 Flower Shop</h1>
-  <p>Свежие букеты каждый день</p>
+  <h1>🌸 Flower & Berry</h1>
+  <p>Цветы • Клубника в шоколаде • Подарки</p>
+  <a class="btn-main" href="https://wa.me/79999999999">Заказать сейчас</a>
 </header>
 
-<section class="products">
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200?text=Bouquet+1">
-    <h3>Букет «Романтика»</h3>
-    <p>1800 ₽</p>
-    <a class="btn" href="https://wa.me/79999999999">Заказать</a>
-  </div>
+<section>
+  <h2 class="section-title">Популярные товары</h2>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200?text=Bouquet+2">
-    <h3>Букет «Нежность»</h3>
-    <p>2200 ₽</p>
-    <a class="btn" href="https://wa.me/79999999999">Заказать</a>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Flowers">
+      <div class="card-content">
+        <h3>Букет «Нежность»</h3>
+        <div class="price">2200 ₽</div>
+        <a class="btn-order" href="https://wa.me/79999999999">Заказать</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Strawberry+Chocolate">
+      <div class="card-content">
+        <h3>Клубника в шоколаде</h3>
+        <div class="price">1800 ₽</div>
+        <a class="btn-order" href="https://wa.me/79999999999">Заказать</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Gift+Box">
+      <div class="card-content">
+        <h3>Подарочный бокс</h3>
+        <div class="price">2900 ₽</div>
+        <a class="btn-order" href="https://wa.me/79999999999">Заказать</a>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<footer>
+  © 2026 Flower & Berry • Заказы через WhatsApp
+</footer>
 
 </body>
 </html>
