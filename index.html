@@ -12,7 +12,7 @@
     .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/hero2.jpg'); }
   </style>
 </head>
-<body class="bg-[#F8EDE3] text-[#6B3E2F] font-sans">
+<body class="bg-[#F8EDE3] text-[#6B3E2F] font-sans overflow-x-hidden">
 
   <!-- HERO -->
   <section class="hero-bg min-h-screen bg-cover bg-center flex items-center text-white">
@@ -120,14 +120,14 @@
     </div>
   </section>
 
-<!-- ОТЗЫВЫ -->
+  <!-- ОТЗЫВЫ -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl text-center mb-16" data-aos="fade-up">Что говорят наши клиенты</h2>
       
       <div class="grid md:grid-cols-3 gap-10">
         <!-- Отзыв 1 -->
-        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all" data-aos="fade-up">
+        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all flex flex-col h-full" data-aos="fade-up">
           <div class="flex text-yellow-400 text-3xl mb-6">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -135,10 +135,10 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <p class="italic text-lg mb-8 leading-relaxed">
+          <p class="italic text-lg mb-8 leading-relaxed flex-1">
             «Заказывала букет на 8 Марта. Цветы просто шикарные, свежие, упаковка премиум! Доставили точно в срок в Адлер. Мама была в восторге! Спасибо огромное!»
           </p>
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 mt-auto">
             <div class="w-12 h-12 bg-[#F8EDE3] rounded-2xl flex items-center justify-center text-3xl text-[#E8A0B8]">
               👩‍🦰
             </div>
@@ -150,7 +150,7 @@
         </div>
 
         <!-- Отзыв 2 -->
-        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
           <div class="flex text-yellow-400 text-3xl mb-6">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -158,10 +158,10 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <p class="italic text-lg mb-8 leading-relaxed">
+          <p class="italic text-lg mb-8 leading-relaxed flex-1">
             «Букет + клубника в шоколаде для девушки. Она была в полном шоке от красоты! Всё свежее, аромат просто волшебный. Доставили в Красную Поляну за 40 минут. Лучший сервис в Сочи!»
           </p>
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 mt-auto">
             <div class="w-12 h-12 bg-[#F8EDE3] rounded-2xl flex items-center justify-center text-3xl text-[#E8A0B8]">
               👨
             </div>
@@ -173,7 +173,7 @@
         </div>
 
         <!-- Отзыв 3 -->
-        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white rounded-3xl p-8 shadow-xl hover:scale-105 transition-all flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
           <div class="flex text-yellow-400 text-3xl mb-6">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -181,10 +181,10 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <p class="italic text-lg mb-8 leading-relaxed">
+          <p class="italic text-lg mb-8 leading-relaxed flex-1">
             «Постоянно заказываю здесь. Никогда не подводят! Букет для подруги на день рождения — 10/10. Свежайшие цветы, красивая лента, открытка. Доставка в Сириус как часы.»
           </p>
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 mt-auto">
             <div class="w-12 h-12 bg-[#F8EDE3] rounded-2xl flex items-center justify-center text-3xl text-[#E8A0B8]">
               👩
             </div>
@@ -231,8 +231,8 @@
 
   
  <!-- ПЛАВАЮЩАЯ КНОПКА TELEGRAM -->
-  <a href="https://t.me/flowers0girls" 
-     class="fixed bottom-8 right-8 bg-[#229ED9] text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-all text-4xl z-50">
+  <a href="https://t.me/flowers0girls"
+     class="fixed bottom-6 right-4 sm:right-8 bg-[#229ED9] text-white w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-all text-4xl z-50">
     <i class="fa-brands fa-telegram"></i>
   </a>
 
